@@ -12,12 +12,13 @@ var near_inputs = ['los angeles', '90401'];
 var COL_API = 'api_data',
     COL_VENUE = 'venue_data',
     near = "90401",
-    query = "cocktails",
+    query = "lounge",
     page = "1",
     params = {
   "near": near, 
   "query": query, 
-  "intent":"browse"
+  "intent":"browse",
+  "limit": "50"
 };
 
 foursquare.exploreVenues(params, function(error, venues){
